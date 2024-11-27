@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quran Verses - Paginated</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>القرآن الكريم</h1>
+        <div class="text-content">
+            <div id="verses"></div>
+        </div>
+        <div class="empty-part">
+            <div class="pagination">
+                <button id="prev" disabled>السابق</button>
+                <button id="next">التالي</button>
+            </div>
+        </div>
+        <div class="search-section">
+            <input type="text" id="search-bar" autocomplete="off" placeholder="ابحث هنا...">
+            <table id="results-table">
+                <thead>
+                    <tr>
+                        <th>التسلسل</th>
+                        <th>النص</th>
+                        <th>الاية</th>
+                        <th>السورة</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+    <script src="text.js"></script>
+    <script src="js.js"></script>
+</body>
+</html>
